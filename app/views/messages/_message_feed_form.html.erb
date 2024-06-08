@@ -1,0 +1,10 @@
+<%= form_with model: message, url: messages_path do |form| %>
+
+  <% @messages.each do |message| %>
+	<div>
+		mailer: <%= message.mailer %><br>
+		message: <%= message.body %>
+	</div>
+  <% end %>
+
+<% end %>

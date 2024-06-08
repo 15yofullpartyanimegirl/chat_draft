@@ -1,0 +1,11 @@
+<%= form_with model: message, url: messages_path do |form| %>
+  <div>
+    <%= form.label :mailer %><br>
+    <%= form.text_field :mailer %><br>
+	
+	<%= form.label :body %><br>
+    <%= form.text_area :body %><br>
+	
+	<%= form.submit 'send' %>
+  </div>
+<% end %>

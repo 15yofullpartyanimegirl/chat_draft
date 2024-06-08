@@ -1,0 +1,3 @@
+<% @message.errors.full_messages_for(:body).each do |warning| %>
+  <div><%= warning %></div>
+<% end %>
